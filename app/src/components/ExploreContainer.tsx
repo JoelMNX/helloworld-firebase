@@ -9,7 +9,7 @@ const env = process.env.REACT_APP_BACKEND_URL_BASE;
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div id="container">
-      <strong>{env}</strong>
+      <strong>{env || "no hay variable de entorno"}</strong>
       <p>
         Explore{" "}
         <a
