@@ -8,7 +8,8 @@ name: Deploy to Firebase Hosting on merge
       - main
 env:
   CI: false
-  VITE_API_BACKEND_URL_BASE: ${{ secrets.VITE_API_BACKEND_URL_BASE }}
+  VITE_API_BACKEND_URL_BASE: "hola"
+  REACT_APP_API_KEY: "tu_clave_api_aqui"
 
 jobs:
   build_and_deploy:
