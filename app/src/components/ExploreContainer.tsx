@@ -1,7 +1,7 @@
 import "./ExploreContainer.css";
-import "/home/joel/helloworld-firebase/helloworld-firebase/.github/workflows/firebase-hosting-merge.yml";
-const envv = import.meta.env.VITE_API_BACKEND_URL_BASE;
-const api = process.env.REACT_APP_API_KEY;
+
+const env = import.meta.env.VITE_API_BACKEND_URL_BASE;
+
 interface ContainerProps {
   name: string;
 }
@@ -11,8 +11,7 @@ interface ContainerProps {
 const ExploreContainer: React.FC<ContainerProps> = ({ name }) => {
   return (
     <div id="container">
-      <strong>{envv ? envv : "no hay variable de entorno"}</strong>
-      <strong>{api ? api : "no hay variable de api"}</strong>
+      <strong>{env ? env : "no hay variable de entorno"}</strong>
       <p>
         Explore{" "}
         <a
